@@ -1,12 +1,14 @@
-// Add JavaScript functionality here, such as form validation or interactive features
-// Example: Submit form data using AJAX
-document.getElementById("contact-form").addEventListener("submit", function(e) {
-    e.preventDefault();
-    
-    // Perform form validation
-    
-    // Submit form data using AJAX
-    
-    // Show success/failure message
+
+  document.getElementById("myForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent form submission
+
+    // Update submit button text
+    document.getElementById("submitButton").textContent = "Submitted";
+
+    // Submit the form using AJAX or any other method if needed
+    // You can use fetch() or jQuery.ajax() to send the form data asynchronously
+
+    // Optionally, display a success message to the user
+    alert("Form submitted successfully!");
   });
-  
+
