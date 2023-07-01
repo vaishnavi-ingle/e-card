@@ -86,7 +86,6 @@ body {
     margin-right: 10px;
     color: #ffffff;
   }
-
   .ser {
     background-color: #f6fff8;
     margin-top: 100px;
@@ -96,6 +95,38 @@ body {
     margin-top: 50px;
   }
   
+  .additional-info {
+    display: none;
+  }
+  
+  .arrow {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #000;
+    border-right: 2px solid #000;
+    transform: rotate(135deg); /* Update initial rotation to upside down */
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .expanded .arrow {
+    transform: rotate(-45deg); /* Update rotation to the right direction */
+  }
+  
+  
+  .expanded .additional-info {
+    display: block;
+  }
+
+  
+.expandable .additional-info {
+  display: none;
+}
+
+.expandable.expanded .additional-info {
+  display: block;
+}
   p {
     background-color: #b5838d;
     padding: 105px 0;
